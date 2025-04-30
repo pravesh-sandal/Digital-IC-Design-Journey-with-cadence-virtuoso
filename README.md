@@ -1,4 +1,5 @@
 Digital IC Design Journey with Cadence Virtuoso
+
 This repository documents my hands-on journey in Digital IC Design using Cadence Virtuoso, focusing on the complete Schematic-to-GDSII flow while working on 45nm CMOS technology.
 
 Over this learning journey, I have explored the full custom design process step by step — from transistor-level schematics to layout creation, design rule checks (DRC), layout-versus-schematic verification (LVS), and parasitic extraction (AV_Extracted view).
