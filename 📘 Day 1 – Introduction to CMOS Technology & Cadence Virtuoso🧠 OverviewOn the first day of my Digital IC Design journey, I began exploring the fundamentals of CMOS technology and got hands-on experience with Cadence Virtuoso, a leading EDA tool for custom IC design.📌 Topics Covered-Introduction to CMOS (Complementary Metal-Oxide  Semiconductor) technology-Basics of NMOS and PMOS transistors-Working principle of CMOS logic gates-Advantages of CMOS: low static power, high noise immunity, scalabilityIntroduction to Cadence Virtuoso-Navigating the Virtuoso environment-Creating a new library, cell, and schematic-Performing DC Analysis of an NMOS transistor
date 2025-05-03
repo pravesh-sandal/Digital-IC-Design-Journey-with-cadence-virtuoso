@@ -1,0 +1,17 @@
+On Day 1, I explored the Virtuoso design environment, understood the basics of CMOS technology, and focused on:
+
+Creating the schematic for an NMOS transistor
+
+Performing DC analysis to study NMOS behavior
+
+Running a parametric sweep by varying V<sub>GS</sub>
+
+Analyzing the I<sub>DS</sub> vs V<sub>DS</sub> characteristics
+
+📂 Includes:
+
+📓 Notes on CMOS and Virtuoso
+
+🖼️ Screenshots of schematics and simulation
+
+🔍 DC Analysis Results
