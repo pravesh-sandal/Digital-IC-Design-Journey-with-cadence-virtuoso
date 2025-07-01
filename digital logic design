@@ -1,0 +1,44 @@
+🔧 Digital Logic in Schematic-to-GDSII (Layout) Flow – Overview
+The schematic-to-GDSII flow is a standard methodology in custom VLSI design, where digital logic is implemented at the transistor level and transformed into a physical layout for fabrication. This flow bridges the gap between logical behavior and physical implementation.
+
+🔹 1. Digital Logic Design (Boolean Level):
+The design begins by defining the logic functionality using Boolean expressions or truth tables.
+Logic gates such as AND, OR, NOT, XOR, NAND, NOR are chosen to construct combinational or sequential logic circuits.
+This logic may be derived manually or through RTL (Register Transfer Level) synthesis, but in custom layout design, we often implement at transistor level for optimization.
+
+🔹 2. Transistor-Level Schematic Creation:
+Each logic gate is implemented using CMOS technology (complementary pairs of NMOS and PMOS transistors).
+A pull-up network (PMOS) connects outputs to VDD, and a pull-down network (NMOS) connects outputs to GND, ensuring correct logic levels.
+The complete digital circuit is built by interconnecting these transistor-level gates.
+
+🔹 3. Simulation & Verification:
+The schematic is simulated to validate the logic using SPICE or a digital simulator.
+Functional correctness and timing behavior are verified before moving to layout.
+
+🔹 4. Layout Design (Custom Physical Design):
+Transistors from the schematic are placed and routed manually in a layout editor.
+Interconnects are made using metal layers following design rules from the technology node (e.g., 180nm).
+Optimization for area, symmetry, parasitic minimization, and power routing is done.
+
+🔹 5. DRC (Design Rule Check):
+Ensures the physical layout complies with the foundry’s geometric constraints (widths, spacings, enclosures, overlaps).
+DRC errors must be resolved to ensure manufacturability.
+
+🔹 6. LVS (Layout vs. Schematic):
+Compares the netlist extracted from the layout with the original schematic.
+Ensures electrical equivalence and catches issues like shorts, opens, or incorrect connectivity.
+
+🔹 7. Parasitic Extraction (PEX):
+The layout is analyzed for real-world effects such as resistance and capacitance introduced by wires and diffusion.
+Extracted netlist includes parasitics and is used for post-layout simulation.
+
+🔹 8. Post-Layout Simulation:
+Validates the design under realistic conditions, capturing delays, glitches, or crosstalk.
+Confirms timing margins and logic correctness before fabrication.
+
+🔹 9. GDSII Generation:
+The final layout is exported as a GDSII file, which contains mask-level information.
+This file is sent to the semiconductor foundry for chip fabrication.
+
+✅ Summary:
+The schematic-to-GDSII flow takes digital logic from abstract Boolean expressions to a fabrication-ready physical design. It involves careful transistor-level implementation, layout creation, and rigorous verification through DRC, LVS, and PEX. This flow is foundational to custom IC design, enabling designers to optimize for area, power, performance, and reliability.
