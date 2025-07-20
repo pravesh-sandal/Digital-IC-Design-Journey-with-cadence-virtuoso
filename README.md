@@ -28,9 +28,6 @@ Welcome to my personal journey into Digital IC Design using Cadence Virtuoso and
 * Day 10	Post-layout simulation of Half Adder 
 
 
-
-
-
 **🛠 Tools Used**
 
 * Cadence Virtuoso – Schematic/Layout Editor
@@ -39,12 +36,12 @@ Welcome to my personal journey into Digital IC Design using Cadence Virtuoso and
 * 45nm CMOS PDK
 
 
-
 **🎯 Objective**
 
 To master the full-custom VLSI design flow by applying transistor-level knowledge to real-world digital circuits, and building a verified, layout-ready IP library.
 
 
+**Tags**: #VLSI #CadenceVirtuoso #CustomLayout #DigitalDesign #GDSII #45nm #EDA
 
 
 
